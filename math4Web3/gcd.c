@@ -19,11 +19,3 @@ int gcd(int m, int n)
 		return (gcd(n, m % n));
 	}
 }
-
-int main(int argc __attribute__((unused)), char **argv)
-{
-	int paramA = atoi(argv[1]);
-	int paramB = atoi(argv[2]);
-	printf("GCD between %d and %d: %d\n", paramA, paramB, gcd(paramA, paramB));
-	return (0);
-}

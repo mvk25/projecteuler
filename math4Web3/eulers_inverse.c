@@ -17,8 +17,8 @@ int eulers_inverse(int e, int p) {
   return result;
 }
 
-int main() {
-  int inverse = eulers_inverse(12, 19);
-  printf("%ld\n", inverse);
-  return (0);
-}
+//int main() {
+  //int inverse = eulers_inverse(317, 14863);
+  //printf("%ld\n", inverse);
+  //return (0);
+//}

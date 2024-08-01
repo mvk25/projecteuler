@@ -33,7 +33,6 @@ fn get_largest_multiples(number: isize) -> (isize, isize) {
         }
         i += 1;
     }
-    // println!("{} {}", a, b);
     return (a, b);
 }
 
@@ -59,8 +58,11 @@ fn get_largest_number(number: isize) -> isize {
 
 
 fn main() {
-    let number = 600851475143isize;
-    // let number = 1234169isize;
+    // let (a, b) = get_largest_multiples(13195);
+    // println!("{a} {b}");
+    // let (c, d) = get_largest_multiples(b);
+    // println!("{c} {d}");
+    let number = 90006012077643isize;
     let b = get_largest_number(number);
     println!("{}", b);
     

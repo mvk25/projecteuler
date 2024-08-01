@@ -29,3 +29,13 @@ int *prime_factors(int a) {
   if (ptr != NULL) ptr[items] = 0;
   return ptr;
 }
+
+int main() {
+  int *factors = prime_factors(31500);
+  int i;
+
+  for (i = 0; factors[i] != 0; i++) {
+    printf("%d ", factors[i]);
+  }
+  return (0);
+}

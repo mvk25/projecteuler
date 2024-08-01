@@ -3,4 +3,3 @@ pub fn is_prime(a: isize) -> bool {
         true
     } else { false }
 }
-
