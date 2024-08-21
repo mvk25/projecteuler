@@ -39,6 +39,7 @@ fn find_palindrome() -> Vec<u64> {
 fn main() {
     for i in find_palindrome().into_iter().rev() {
         let (a, b ) = get_largest_multiples(i as isize);
+        println!("{a} {b}");
         if a.to_string().len() == 3 && b.to_string().len() == 3 {
             println!("{} {} {i}", a, b);
             break;

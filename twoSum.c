@@ -21,6 +21,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 }
 
 int main() {
+  //Do not remember the challenge, to be implemented soon!
 	int nums = {3, 2, 4};
 
 	int target = 6;
@@ -28,6 +29,6 @@ int main() {
 	int* returnSize;
 	int numsSize = sizeof(nums) / sizeof(nums[0]);
 
-	printf("twoSum(nums, numsSize, target, returnSize)
-
-
+	printf("twoSum(nums, numsSize, target, returnSize"}
+  return (0);
+}

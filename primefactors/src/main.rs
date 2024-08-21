@@ -1,4 +1,6 @@
 mod isprime;
+use core::num;
+
 use isprime::is_prime;
 
 fn isqrt(n: usize) -> usize {
@@ -62,9 +64,11 @@ fn main() {
     // println!("{a} {b}");
     // let (c, d) = get_largest_multiples(b);
     // println!("{c} {d}");
-    let number = 90006012077643isize;
-    let b = get_largest_number(number);
-    println!("{}", b);
+    let number = 600851475143isize;
+    // let b = get_largest_number(number);
+    let (a, b) = get_largest_multiples(number);
+    println!("{a} {b}");
+    // println!("{}", b);
     
 }
 

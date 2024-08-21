@@ -14,6 +14,13 @@ fn perfect_square(n: usize) -> isize {
         _ => -1,
     }
 }
+// fn perfect_square(n: usize) -> isize {
+//     let sqrt = (n as f64).sqrt() as isize;
+//     if sqrt * sqrt == n as isize {
+//         return sqrt;
+//     }
+//     -1
+// }
 
 pub fn get_largest_multiples(number: isize) -> (isize, isize) {
     let mut i = 1isize;

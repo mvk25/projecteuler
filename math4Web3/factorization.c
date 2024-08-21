@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "util.h"
+#include <time.h>
 /** prime_factors - calculates the prime factorization of the input
  *
  * a: the input type
@@ -31,11 +32,19 @@ int *prime_factors(int a) {
 }
 
 int main() {
-  int *factors = prime_factors(31500);
-  int i;
+  clock_t start, end;
+  double cpu_time_used;
+  start = clock();
+  int *numptrs = prime_factors(756780);
 
-  for (i = 0; factors[i] != 0; i++) {
-    printf("%d ", factors[i]);
+  for (int i = 0; numptrs[i] != 0; ++i) {
+    printf("%i  ", numptrs[i]);
   }
+
+  free(numptrs);
+  end = clock();
+
+  cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+  printf("Time taken: %f seconds\n", cpu_time_used);
   return (0);
 }
